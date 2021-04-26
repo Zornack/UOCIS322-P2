@@ -15,7 +15,7 @@ def file(url):
 @app.errorhandler(404)
 def not_found(e):
     return send_from_directory('/templates', '404.html'), 404
-#
+
 @app.errorhandler(403)
 def forbbiden(e):
     return send_from_directory('/templates', '403.html'), 403
